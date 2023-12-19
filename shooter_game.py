@@ -9,7 +9,7 @@ win = font1.render('ПОБЕДА', True, (255, 255, 255))
 lose = font1.render('ПРОИГРЫШ', True, (180, 0, 0))
  
 #фоновая музыка
-#  m    ixer.init()
+#mixer.init()
 #mixer.music.load('space.ogg')
 #mixer.music.play()
 #fire_sound = mixer.Sound('fire.ogg')
@@ -90,7 +90,7 @@ background = transform.scale(image.load(img_back), (win_width, win_height))
 ship = Player(img_hero, 5, win_height - 100, 80, 100, 10)
 # создание группы спрайтов-врагов
 monsters = sprite.Group()
-for i in range(5):
+for i in range(7):
     monster = Enemy(img_enemy, randint(80, win_width - 80), -40, 80, 50, randint(1, 5))
     monsters.add(monster)
  
